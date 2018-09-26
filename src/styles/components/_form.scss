@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &,
+  .SingleDatePickerInput,
+  .SingleDatePickerInput_1 {
+    width: 100%;
+  }
+
+  > * {
+    margin-bottom: $md-size;
+  }
+
+  &__error {
+    background-color: #ff4500;
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+    padding: $md-size;
+    margin: 0 0 $md-size 0;
+
+    &:link,
+    :visited,
+    :active {
+      color: #faa586;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+}

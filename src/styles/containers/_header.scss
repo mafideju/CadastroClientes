@@ -1,0 +1,46 @@
+.header {
+  background-image: linear-gradient(
+    to right bottom,
+    lighten($orange-three, 15%),
+    darken($orange-three, 10%)
+  );
+
+  &__title {
+    color: white;
+    text-decoration: none;
+
+    &,
+    h1 {
+      margin: 0;
+    }
+  }
+
+  &__title--animated-left {
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: $sm-size 0;
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

@@ -1,0 +1,19 @@
+.page-header {
+  background: $off-white;
+  margin-bottom: $lg-size;
+  padding: $lg-size 0;
+
+  &__title {
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+
+    @media (min-width: $desktop-breakpoint) {
+      text-align: left;
+    }
+
+    &--highlight {
+      font-weight: 700;
+    }
+  }
+}

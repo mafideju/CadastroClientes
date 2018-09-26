@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HEADER COMPONENT TESTING 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="content-container"
+  >
+    <div
+      className="header__content"
+    >
+      <NavLink
+        activeClassName="active"
+        aria-current="page"
+        className="header__title"
+        exact={true}
+        to="/dashboard"
+      >
+        <h1
+          className="header__title--animated-left"
+        >
+          **Boilerplate**
+        </h1>
+      </NavLink>
+      <button
+        className="button button--logout button--animated__right"
+        onClick={[Function]}
+      >
+        Sair
+      </button>
+    </div>
+  </div>
+</header>
+`;

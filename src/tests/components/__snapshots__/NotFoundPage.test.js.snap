@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NOT FOUND PAGE COMPONENT TESTING 1`] = `
+<div>
+  404 - Página Não Encontrada
+  <br />
+  <Link
+    replace={false}
+    to="/"
+  >
+    Página Inicial
+  </Link>
+</div>
+`;

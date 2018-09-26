@@ -1,0 +1,40 @@
+.box-layout {
+  align-items: center;
+  background: url('/images/bgcoins100.jpg');
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.box-layout__box {
+  background: fade-out($orange-one, 0.25);
+  border-radius: 10px;
+  padding: $lg-size $md-size;
+  text-align: center;
+  width: 25rem;
+}
+
+.box-layout__title {
+  margin: 0 0 $md-size 0;
+  line-height: 1.4;
+  animation-name: moveInTop;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-out;
+}
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-15rem);
+  }
+
+  80% {
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DASHBOARD-PAGE COMPONENT TESTING 1`] = `
+<div>
+  Pagina Inicial do Aplicativo
+</div>
+`;

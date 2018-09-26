@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "react",
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 5 versions", "ie >= 8"]
+        }
+      }
+    ]
+  ],
+  "plugins": ["transform-object-rest-spread", "transform-class-properties"]
+}

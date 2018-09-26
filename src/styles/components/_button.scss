@@ -1,0 +1,165 @@
+.button {
+  backface-visibility: hidden;
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.5rem;
+  }
+  &:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 1rem 2rem rgba(white, 0.2);
+
+    &::after {
+      transform: scaleX(1.6) scaleY(1.5);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px) scale(1);
+    box-shadow: 0 0.5rem 1rem rgba(white, 0.2);
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.25s;
+  }
+
+  &--green {
+    background-color: greenyellow;
+    color: white;
+    padding: 2rem 4rem !important;
+
+    &::after {
+      background-color: greenyellow;
+    }
+  }
+
+  &--animated {
+    animation-name: moveInBottom;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
+  &--animated__left {
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
+  &--animated__right {
+    animation-name: moveInRight;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
+  &--login {
+    margin-top: 1rem;
+    background-color: $orange-two;
+    color: white;
+    font-weight: 500;
+  }
+
+  &--expense {
+    margin-top: 3rem;
+    background-color: $orange-two;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+
+    @media (min-width: $desktop-breakpoint) {
+      width: auto;
+    }
+
+    &__edit {
+      margin-top: 0;
+    }
+
+    &__remove {
+      margin-top: -6.3rem;
+      background-color: red;
+      float: none;
+      margin: 0 0 1.5rem 0;
+
+      @media (min-width: $desktop-breakpoint) {
+        float: right;
+      }
+    }
+  }
+
+  &--logout {
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 1.75rem;
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(15rem);
+  }
+
+  80% {
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(15rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

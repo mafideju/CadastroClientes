@@ -1,0 +1,16 @@
+.spinner {
+  display: flex;
+  background-color: orange;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    // height: auto;
+    // width: auto;
+  }
+}

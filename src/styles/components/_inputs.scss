@@ -1,0 +1,23 @@
+.DateRangePickerInput,
+.SingleDatePickerInput {
+  border-radius: 5px !important;
+}
+
+.text-input {
+  border: 1px solid #cacccd;
+  border-radius: 3px;
+  height: 4.7rem;
+  font-size: $font-size-large;
+  font-weight: 400;
+  padding: $sm-size;
+  width: 100%;
+}
+
+.select {
+  @extend .text-input;
+}
+
+.text-area {
+  @extend .text-input;
+  height: 10rem;
+}

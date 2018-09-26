@@ -1,0 +1,9 @@
+.content-container {
+  margin: 0 auto;
+  padding: 0 $md-size;
+  max-width: 80rem;
+
+  &--inputs {
+    width: 100% !important;
+  }
+}

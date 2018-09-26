@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LOGIN PAGE COMPONENT TESTING 1`] = `
+<div
+  className="box-layout"
+>
+  <div
+    className="box-layout__box"
+  >
+    <h1
+      className="box-layout__title"
+    >
+      **Boilerplate**
+    </h1>
+    <p>
+      Faça as Edições Necessárias
+    </p>
+    <button
+      className="button button--animated button--login"
+    >
+      Entrar com Google
+    </button>
+  </div>
+</div>
+`;

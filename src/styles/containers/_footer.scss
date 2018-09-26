@@ -1,0 +1,20 @@
+.footer {
+  background-image: linear-gradient(
+    to right bottom,
+    lighten($orange-three, 15%),
+    darken($orange-three, 10%)
+  );
+
+  &__content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: $sm-size 0;
+
+    &--text {
+      color: white;
+      font-size: $md-size;
+      text-align: center;
+    }
+  }
+}
